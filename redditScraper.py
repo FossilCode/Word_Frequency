@@ -1,10 +1,11 @@
 import praw
 
 # Initialize Reddit API
+# Register an app with the API at --- https://ssl.reddit.com/prefs/apps/
 reddit = praw.Reddit(
-    client_id='mhY1T0Ir_s6iWarCXs8aDA',
-    client_secret='iw33SyG3q_MhEE18oc3jR2UpSeDDDA',
-    user_agent='WebScraping'
+    client_id='',
+    client_secret='',
+    user_agent=''
 )
 
 # scrape subreddit titles
