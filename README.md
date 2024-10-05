@@ -34,7 +34,7 @@ After cleaning, the script will print the most common words in each file, along 
 
 ### Reddit Scraping
 
-The `scrape_subreddits.py` script allows you to scrape the top titles from specified subreddits.
+The `redditScraper.py` script allows you to scrape the top titles from specified subreddits.
 
 #### Steps to Use:
 
