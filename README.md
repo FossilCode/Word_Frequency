@@ -1,4 +1,4 @@
-# Text Cleaner and Reddit Scraper
+# Word Frequency Analysis, Text Cleaning, and Reddit Scraper
 
 This repository contains Python scripts that provide functionality for cleaning text files and scraping titles from various subreddits on Reddit. The scripts are designed to help users prepare text data for analysis and gather popular topics from the Reddit community.
 
