@@ -3,10 +3,16 @@ import praw
 # Initialize Reddit API
 # Register an app with the API at --- https://ssl.reddit.com/prefs/apps/
 reddit = praw.Reddit(
-    client_id='',
-    client_secret='',
-    user_agent=''
+    client_id='mhY1T0Ir_s6iWarCXs8aDA',
+    client_secret='iw33SyG3q_MhEE18oc3jR2UpSeDDDA',
+    user_agent='WebScraping'
 )
+
+# Wipe the file / Make the file.
+
+with open('Texts/reddit_titles.txt', 'r+') as f:
+    f.seek(0)
+    f.truncate()
 
 # scrape subreddit titles
 def scrape_subreddits(subreddits):

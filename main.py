@@ -1,15 +1,18 @@
 from WordFrequency import countwords, format_most_common
 from cleaner import clean
 import os
-subfolder = 'Texts/'
+
 # Automatically get all .txt files in the subfolder
-texts = [os.path.join(subfolder, file) for file in os.listdir(subfolder) if file.endswith('.txt')]
+texts = [os.path.join('Texts/', file) for file in os.listdir('Texts/') if file.endswith('.txt')]
 
-numWords = 5    #how many words would you like information about?
-filtered = True #would you like to filter out 'stopwords'
-
+numWords = int(input("how many words would you like information about? (default 5): ") or 5)
+filtered_input = input("would you like to filter out 'stopwords'? (y/n, default y): ").lower() or 'y'
 
 for text in texts:
+    if filtered_input == 'y':
+        filtered = True
+    else:
+        filtered = False
     
     clean(text)
     
